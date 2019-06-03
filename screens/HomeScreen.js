@@ -17,6 +17,7 @@ import { Container, Header, Tab, Tabs, TabHeading, Icon, Text, ScrollableTab, It
 import Tab1 from './TabOne';
 import Tab2 from './TabTwo';
 import Tab3 from './TabThree';
+import CardImage from '../components/CardImage';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -78,7 +79,7 @@ export default class HomeScreen extends React.Component {
       <Container>
         <Tabs renderTabBar={()=> <ScrollableTab />}>
           <Tab heading={ <TabHeading><Text>ホーム</Text></TabHeading>}>
-            <Tab1 />
+            <CardImage />
           </Tab>
           <Tab heading={ <TabHeading><Text>フォロー中</Text></TabHeading>}>
             <Tab2 />
