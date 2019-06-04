@@ -13,12 +13,12 @@ export default class CardImage extends Component {
             <CardItem>
               <Left>
                 <Button transparent>
-                  <Icon active name="thumbs-up" />
-                  <Text>12</Text>
+                  <Icon active name="ios-heart-empty" style={{color: 'black'}}/>
+                  <Text style={{color: 'black'}}>12</Text>
                 </Button>
                 <Button transparent>
-                  <Icon active name="chatbubbles" />
-                  <Text>4</Text>
+                  <Icon active name="ios-text" style={{color: 'grey'}}/>
+                  <Text style={{color: 'black'}}>4</Text>
                 </Button>
                 <Text>1分前</Text>
               </Left>
@@ -26,8 +26,8 @@ export default class CardImage extends Component {
 
               </Body>
               <Right>
-                <Button style={{height: 50,width: 50,borderRadius:25,backgroundColor:'grey'}}>
-                  <Icon active name="thumbs-up"/>
+                <Button style={{height: 52,width: 52,borderRadius:26,backgroundColor:'lightgrey'}}>
+                  <Icon active name="heart"/>
                 </Button>
               </Right>
             </CardItem>

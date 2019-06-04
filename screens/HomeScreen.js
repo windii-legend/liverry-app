@@ -22,9 +22,9 @@ import CardImage from '../components/CardImage';
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: () => (<Header searchBar rounded>
-          <Item>
+          <Item style={{margin: 8, backgroundColor: 'lightgrey', fontSize: 12}}>
             <Icon name="ios-search" />
-            <Input placeholder="キーワードで検索" />
+            <Input placeholder="キーワードで検索"/>
           </Item>
         </Header>),
   };
@@ -77,26 +77,14 @@ export default class HomeScreen extends React.Component {
 
     return (
       <Container>
-        <Tabs renderTabBar={()=> <ScrollableTab />}>
-          <Tab heading={ <TabHeading><Text>ホーム</Text></TabHeading>}>
+        <Tabs renderTabBar={()=> <ScrollableTab />} tabBarUnderlineStyle={{marginBottom: 8, height: 2, backgroundColor: 'red'}}>
+          <Tab heading={<TabHeading><Text style={{fontSize:12, fontWeight: 'bold'}}>ホーム</Text></TabHeading>}>
             <CardImage />
           </Tab>
-          <Tab heading={ <TabHeading><Text>フォロー中</Text></TabHeading>}>
+          <Tab heading={ <TabHeading><Text style={{fontSize:12, fontWeight: 'bold'}}>フォロー中</Text></TabHeading>}>
             <Tab2 />
           </Tab>
-          <Tab heading={ <TabHeading><Text>おすすめ</Text></TabHeading>}>
-            <Tab3 />
-          </Tab>
-          <Tab heading={ <TabHeading><Icon name="apps" /></TabHeading>}>
-            <Tab3 />
-          </Tab>
-          <Tab heading={ <TabHeading><Icon name="apps" /></TabHeading>}>
-            <Tab3 />
-          </Tab>
-          <Tab heading={ <TabHeading><Icon name="apps" /></TabHeading>}>
-            <Tab3 />
-          </Tab>
-          <Tab heading={ <TabHeading><Icon name="apps" /></TabHeading>}>
+          <Tab heading={ <TabHeading><Text style={{fontSize:12, fontWeight: 'bold'}}>おすすめ</Text></TabHeading>}>
             <Tab3 />
           </Tab>
         </Tabs>
